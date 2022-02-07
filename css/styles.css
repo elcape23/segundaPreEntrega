@@ -1,0 +1,671 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+}
+
+/*INDEX*/
+/*Estructura principal*/
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "logo nav"
+                         "ppal ppal"
+                         "pie pie";
+    grid-template-rows: 10vh auto 5vh;
+    background: url(/img/background-index.png);
+    background-size: cover;
+    animation-name: contenedor;
+    animation-duration: 4s;
+}
+
+@keyframes contenedor{
+    0%{
+        background: url(/img/background-index-black.png);
+        background-size: cover;
+    }
+
+    100%{
+        background: url(/img/background-index.png);
+        background-size: cover;
+    }
+}
+
+/*Encabezado*/
+.encabezado{
+    grid-area: logo;
+    align-self: center;
+    margin-left: 10vw;
+}
+
+.logoMyle{
+    width: 20%;
+    transition: ease-out 0.5s;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+.logoMyle:hover{
+    opacity: 0.5;
+}
+
+/*Lista de navegador*/
+.navegador{
+    grid-area: nav;
+    align-self: center;
+    margin-right: 2vw;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+.listaNav{
+    display: flex;
+    list-style: none;
+}
+
+
+.letraFuerte{
+    font-weight: 900;
+}
+
+.listaNav li{
+    transition: ease-out 0.2s;
+}
+
+.listaNav li:hover{
+    transform: scale(1.05);
+}
+
+
+.listaNav > li:hover .subMenu{
+    display: block;
+}
+
+.listaNav > li > a {
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    text-decoration: none;
+    color: black;
+    transition: ease-out 0.5s;
+}
+
+.listaNav li a:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.subMenu{
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+
+.subMenu > li {
+    margin-top: 2vh;
+    justify-self: left;
+}
+
+/*Contenido principal de la página*/
+.contenidoPrincipal{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". residencial"
+                         ". edificio"
+                         ". proy"
+                         ". wa";
+    grid-template-rows: 40% 15% 10% 35%;
+    grid-template-columns: 70% 30%;
+}
+
+/*Títulos en página principal*/
+/*Residencial*/
+.tituloResidencial{
+    font-weight: 600;
+    grid-area: residencial;
+    align-self: end;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+/*Edificio A1*/
+.tituloProyecto{
+    font-size: 7vh;
+    font-weight: 900;
+    grid-area: edificio;
+    align-self: start;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+/*Botón de Ver proyecto*/
+.tituloVerProyecto{
+    font-size: 2.5vh;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    grid-area: proy;
+    align-self: start;
+    transition: ease-out 0.5s;
+    animation-name: colorTexto;
+    animation-duration: 5s;
+}
+
+@keyframes colorTexto{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+}
+}
+
+.tituloVerProyecto:hover{
+    opacity: 0.5;
+    font-size: 2.6vh;
+}
+/*Logo de WhatsApp para mandar mensaje*/
+.logoWhatsapp{
+    grid-area: wa;
+    align-self: center;
+    justify-self: right;
+    margin-right: 3vw;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+.logoWhatsapp img{
+    transition: all .2s ease-in-out;
+}
+
+.logoWhatsapp img:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/*Pie de página*/
+.piePagina{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 45% 55%;
+    animation-name: colorTexto;
+    animation-duration: 5s;
+}
+/*Lista de RRSS*/
+.listaRedes{
+    grid-area: rrss;
+    display: flex;
+    justify-self: right;
+    margin-right: 8vw;
+    list-style: none;
+    align-self: center;
+    transition: ease-out 0.5s;
+}
+
+.listaRedes a:hover{
+    opacity: 0.5;
+}
+
+/*Texto de pie*/
+.copyright{
+    grid-area: copy;
+    font-size: 2vh;
+    font-weight: 300;
+    align-self: center;
+    color: white;
+}
+
+/*PÁGINA PROYECTOS*/
+.contenedorProyectos{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "logoP . navP"
+                         "ppal ppal ppal"
+                         "pie pie pie";
+    grid-template-rows: 10% 80% 10%;
+    background-color: white;
+    animation-name: contenedorProyectos;
+    animation-duration: 3s;
+}
+
+@keyframes contenedorProyectos{
+    from{
+        background-color: black;
+    }
+
+    to{
+        background-color: white;
+    }
+}
+
+/*Encabezado de Proyectos*/
+.encabezadoProyectos{
+    grid-area: logoP;
+    align-self: center;
+    margin-left: 10vw;
+}
+
+.logoMyleProyectos{
+    width: 40%;
+    transition: ease-out 0.5s;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+.logoMyleProyectos:hover{
+    opacity: 0.5;
+}
+
+/*Lista de navegador de Proyectos*/
+.navegadorProyectos{
+    grid-area: navP;
+    align-self: center;
+    margin-right: 2vw;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+.listaNavProyectos{
+    display: flex;
+    list-style: none;
+}
+
+.listaNavProyectos li:hover{
+    transform: scale(1.05);
+}
+
+.listaNavProyectos > li:hover .subMenuProyectos{
+    display: block;
+}
+
+.listaNavProyectos > li > a {
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    text-decoration: none;
+    color: black;
+    transition: ease-out 0.5s;
+}
+
+.listaNavProyectos > li > a:hover{
+    opacity: 0.5;
+}
+
+.subMenuProyectos{
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+
+.subMenuProyectos > li {
+    margin-top: 2vh;
+    justify-self: left;
+    font-weight: 400;
+}
+
+/*Contenido principal de la página Proyectos*/
+.contenidoPrincipalProyectos{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". nuestros ."
+                         ". proyectos ."
+                         ". img ."
+                         ". . wa";
+    grid-template-rows: 5% 10% 80% 5%;
+    grid-template-columns: 15% 70% 15%;
+}
+
+/*Títulos en página principal Proyectos*/
+/*Nuestros*/
+.contenedorImagenes{
+    grid-area: img;
+    grid-template-areas: "proy1 proy2"
+                         "proy3 proy4";
+    animation-name: imagenesProyectos;
+    animation-duration: 3s;
+}
+
+@keyframes imagenesProyectos{
+    from{
+        opacity: 0%
+    }
+    to{
+        opacity: 100%
+    }
+}
+
+/*Edificio A1*/
+.proyectoUno{
+    grid-area: proy1;
+}
+
+.proyectoUno img{
+    width: 49%;
+    transition: ease-out 0.5s;
+}
+
+.proyectoUno img:hover{
+    transform: scale(1.05);
+}
+
+/*Edificio SF*/
+.proyectoDos img{
+    width: 49%;
+    transition: ease-out 0.5s;
+}
+
+.proyectoDos img:hover{
+    transform: scale(1.05);
+}
+
+/*Casa CV*/
+.proyectoTres img{
+    width: 49%;
+    transition: ease-out 0.5s;
+}
+
+.proyectoTres img:hover{
+    transform: scale(1.05);
+}
+
+/*Casa Cafayate*/
+.proyectoCuatro img{
+    width: 49%;
+    transition: ease-out 0.5s;
+}
+
+.proyectoCuatro img:hover{
+    transform: scale(1.05);
+}
+
+/*Título Nuestros*/
+.tituloNuestros{
+    font-weight: 600;
+    grid-area: nuestros;
+    align-self: center;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+/*Título Proyectos*/
+.tituloProyectos{
+    font-size: 7vh;
+    font-weight: 900;
+    grid-area: proyectos;
+    align-self: end;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+
+/*Pie de página de Proyectos*/
+.piePaginaProyectos{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 50% 50%;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+}
+/*Lista de RRSS de Proyectos*/
+.listaRedesProyectos{
+    grid-area: rrss;
+    display: flex;
+    justify-self: left;
+    margin-left: 4vw;
+    list-style: none;
+    align-self: center;
+}
+
+.listaRedesProyectos a{
+    transition: all .2s ease-in-out;
+}
+
+.listaRedesProyectos a:hover{
+    opacity: 0.5;
+    transform: scale(2);
+}
+
+/*Texto de pie de Proyectos*/
+.copyrightProyectos{
+    grid-area: copy;
+    font-size: 1.6vh;
+    font-weight: 300;
+    justify-self: right;
+    margin-right: 1vw;
+    align-self: center;
+    color:black;
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 375px) and (max-width: 768px){
+    /*INDEX*/
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-areas: ". logo ."
+                             ". nav ."
+                             "ppal ppal ppal"
+                             "pie pie pie";
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10% 10% 70% 10%;
+        background: url(/img/background-mobile.png);
+        background-size: cover;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+
+    @keyframes contenedor{
+        0%{
+            background: url(/img/background-mobile-black.png);
+            background-size: cover;
+        }
+    
+        100%{
+            background: url(/img/background-mobile.png);
+            background-size: cover;
+        }
+    }
+
+    /*Encabezado index mobile*/
+    .encabezado{
+        grid-area: logo;
+        width: 70%;
+        justify-self: center;
+    }
+
+    /*Logo mobile*/
+    .logoMyle{
+        width: 90%;
+        transition: ease-out 0.5s;
+        animation-name: colorTexto;
+        animation-duration: 5s;
+    }
+    
+    .logoMyle:hover{
+        opacity: 0.5;
+    }
+
+    /*Navegador mobile*/
+    .navegador{
+        justify-self: center;
+    }
+
+    .navegador li{
+        font-size: large;
+        border-radius: 1vw;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .letraFuerte{
+        display: none;
+    }
+
+    /*Contenido principal mobile*/
+    .contenidoPrincipal{
+        grid-area: ppal;
+        display: grid;
+        grid-template-areas: ". residencial ."
+                             ". edificio ."
+                             ". proy ."
+                             ". . wa";
+        grid-template-rows: 60% 10% 15% 15%;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    /*Títulos en página principal mobile*/
+    /*Residencial*/
+    .tituloResidencial{
+        display: none;
+    }
+    /*Edificio A1*/
+    .tituloProyecto{
+        font-size: 6vh;
+        justify-self: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1vw;
+        border-radius: 1vw;
+        font-weight: 900;
+        grid-area: edificio;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: 5s;
+    }
+    /*Botón de Ver proyecto*/
+    .tituloVerProyecto{
+        font-size: 2.5vh;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        grid-area: proy;
+        padding: 1vw;
+        border-radius: 1vw;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        align-self: start;
+        align-self: end;
+        justify-self: center;
+        transition: ease-out 0.5s;
+        animation-name: colorTexto;
+        animation-duration: 5s;
+    }
+    /*Logo de WhatsApp para mandar mensaje*/
+    .logoWhatsapp{
+        grid-area: wa;
+        align-self: center;
+        justify-self: right;
+        margin-right: 3vw;
+        animation-name: colorTexto;
+        animation-duration: 5s;
+    }
+
+    .logoWhatsapp img{
+        transition: all .2s ease-in-out;
+    }
+
+    .logoWhatsapp img:hover{
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+    /*PÁGINA PROYECTOS*/
+    /*Contenido principal mobile*/
+    .contenedorProyectos{
+        width: 100%;
+        display: grid;
+        grid-template-areas: ". logo ."
+                             ". nav ."
+                             "ppal ppal ppal"
+                             "pie pie pie";
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10% 5% 80% 5%;
+        background-size: cover;
+        animation-name: contenedorProyectos;
+        animation-duration: 4s;
+    }
+
+    @keyframes contenedorProyectos{
+        from{
+            background-color: black;
+        }
+    
+        to{
+            background-color: white;
+        }
+    }
+
+    /*Encabezado mobile*/
+    .encabezadoProyectos{
+        grid-area: logo;
+        width: 50%;
+        margin: 1vh;
+        justify-self: center;
+    }
+
+    /*Logo mobile*/
+    .logoMyleProyectos{
+        width: 100%;
+    }
+
+    /*Navegador mobile*/
+    .navegadorProyectos{
+        grid-area: nav;
+    }
+
+    .listaNavProyectos{
+        justify-content: center;
+    }
+
+    /*Contenido principal en página proyectos mobile*/
+    .contenidoPrincipalProyectos{
+        grid-area: ppal;
+        display: grid;
+        grid-template-areas: ". nuestros ."
+                             ". proyectos ."
+                             ". img ."
+                             ". . wa";
+        grid-template-rows: 5% 5% 80% 10%;
+        grid-template-columns: 15% 70% 15%;
+    }
+    
+    /*Imágenes de proyectos*/
+    .contenedorImagenes a img{
+        width: 100%;
+    }
+
+    /*Título Proyectos*/
+    .tituloProyectos{
+        font-size: 8vw;
+    }
+
+    /*Contenedor de imágenes de proyectos*/
+    .contenedorImagenes{
+        grid-area: img;
+        grid-template-areas: "proy1 proy2"
+                             "proy3 proy4";
+        animation-name: imagenesProyectos;
+        animation-duration: 5s;
+    }
+    
+    @keyframes imagenesProyectos{
+        from{
+            opacity: 0%
+        }
+        to{
+            opacity: 100%
+        }
+    }
+
+    /*Casa Cafayate mobile no aparece*/
+    .proyectoCuatro{
+        display: none;
+    }
+
+    /*Pie de página de proyecto mobile*/
+    .piePaginaProyectos{
+        grid-template-columns: 30% 70%;
+    }
+    
+    /*Copyright mobile*/
+    .copyrightProyectos{
+        justify-self: center;
+    }
+}
+
