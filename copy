@@ -1,0 +1,40 @@
+.carousel{
+    grid-area: img;
+    animation-name: carousel;
+    animation-duration: 3s;
+}
+
+@keyframes carousel{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+}
+}
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="https://dm2306files.storage.live.com/y4mAEInHUGtsZScJtlIS_b9iD0rOmBzbJu_j0AupOBqI84bG-RqkHItWb0ayz6ZdwPhD5JK4kNp_SG7F2CPligsJB9G34jUNxoIDymFe3UE3Qq12V7HoSeQClkszi5raz0-ZaWvz7KfNZ9HvMwX0tYbcnuBjvTSwrKN3bqSjiTsnCQGu6eBZvRi957jlhHPgEFM?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="edificioA1">
+  </div>
+  <div class="carousel-item">
+    <img src="https://dm2306files.storage.live.com/y4mIvmtgebs1OJSpGXcjjMC3ywiTd5K8ufmSutDODnYcf49ehdQ2Qva8iZCbKcRCz_MUVvQhDqAHh49Qch21Nu2BheNS6wom89FWQyg23Hb_p3m8163Vp0I_qsQsll9-5tUWs6wxQbrpXAyjj-bs8_Gkvs2e8xNXax4Hf4Z3DY2in-h7EpOJjULnon1ueuoWPOr?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="EdificioSf">
+  </div>
+  <div class="carousel-item">
+    <img src="https://dm2306files.storage.live.com/y4mc564jyDf-Wre-_kdLS9cajRueZYC9WzBB6ErGhfuH_tPDeusQfiYa1bTrI0yxERjlphKktidxWvnK66TymPj-n6ClbkhTmh-loluBm1BC74A0Q5LKNoi44C86MYVYSiSC920BcUKBM_cXgToU3odPGxSlwXsaOHZxn2xhWKhOUfXIx3Bn3-ys0Skb2C-GGUA?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="CasaCv">
+  </div>
+  <div class="carousel-item">
+    <img src="https://dm2306files.storage.live.com/y4mR8Ba7InQXK8A95s5l1nf_forOpAZTmIV6PUVOxdgjYfUXauSEBNb42nExIvDB2qBmJTesQLNijwCqrzEbZfjSqOUOdMuZmNYnShDP8THAJQJ_IK2mNwRN5E1H0IMhftjkeEvew5NW9cmxIfsNBO6uhJqNrYeC3JK1lPOWo3bO5BiO8Yt5hkMeUjxFlrkaDMC?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="CafayateA32">
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>

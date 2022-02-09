@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!--Link CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!--Link fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,23 +63,31 @@
             Proyectos
         </h1>
 
-        <div class="contenedorImagenes">
-            <a href="/pages/edificioA1.html" class="proyectoUno">
-                <img src="https://dm2306files.storage.live.com/y4mAEInHUGtsZScJtlIS_b9iD0rOmBzbJu_j0AupOBqI84bG-RqkHItWb0ayz6ZdwPhD5JK4kNp_SG7F2CPligsJB9G34jUNxoIDymFe3UE3Qq12V7HoSeQClkszi5raz0-ZaWvz7KfNZ9HvMwX0tYbcnuBjvTSwrKN3bqSjiTsnCQGu6eBZvRi957jlhHPgEFM?width=3840&height=2160&cropmode=none" alt="edificioA1">
-            </a>
-
-            <a href="" class="proyectoDos">
-                <img src="https://dm2306files.storage.live.com/y4mIvmtgebs1OJSpGXcjjMC3ywiTd5K8ufmSutDODnYcf49ehdQ2Qva8iZCbKcRCz_MUVvQhDqAHh49Qch21Nu2BheNS6wom89FWQyg23Hb_p3m8163Vp0I_qsQsll9-5tUWs6wxQbrpXAyjj-bs8_Gkvs2e8xNXax4Hf4Z3DY2in-h7EpOJjULnon1ueuoWPOr?width=3840&height=2160&cropmode=none" alt="EdificioSf">
-            </a>
-
-            <a href="" class="proyectoTres">
-                <img src="https://dm2306files.storage.live.com/y4mc564jyDf-Wre-_kdLS9cajRueZYC9WzBB6ErGhfuH_tPDeusQfiYa1bTrI0yxERjlphKktidxWvnK66TymPj-n6ClbkhTmh-loluBm1BC74A0Q5LKNoi44C86MYVYSiSC920BcUKBM_cXgToU3odPGxSlwXsaOHZxn2xhWKhOUfXIx3Bn3-ys0Skb2C-GGUA?width=3840&height=2160&cropmode=none" alt="CasaCv">
-            </a>
-
-            <a href="" class="proyectoCuatro">
-                <img src="https://dm2306files.storage.live.com/y4mR8Ba7InQXK8A95s5l1nf_forOpAZTmIV6PUVOxdgjYfUXauSEBNb42nExIvDB2qBmJTesQLNijwCqrzEbZfjSqOUOdMuZmNYnShDP8THAJQJ_IK2mNwRN5E1H0IMhftjkeEvew5NW9cmxIfsNBO6uhJqNrYeC3JK1lPOWo3bO5BiO8Yt5hkMeUjxFlrkaDMC?width=3840&height=2160&cropmode=none" alt="CafayateA32">
-            </a>
-        </div>
+        <!--Carousel de imágenes-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://dm2306files.storage.live.com/y4mAEInHUGtsZScJtlIS_b9iD0rOmBzbJu_j0AupOBqI84bG-RqkHItWb0ayz6ZdwPhD5JK4kNp_SG7F2CPligsJB9G34jUNxoIDymFe3UE3Qq12V7HoSeQClkszi5raz0-ZaWvz7KfNZ9HvMwX0tYbcnuBjvTSwrKN3bqSjiTsnCQGu6eBZvRi957jlhHPgEFM?width=3840&height=2160&cropmode=none" class="d-block w-100  img-fluid" alt="edificioA1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dm2306files.storage.live.com/y4mIvmtgebs1OJSpGXcjjMC3ywiTd5K8ufmSutDODnYcf49ehdQ2Qva8iZCbKcRCz_MUVvQhDqAHh49Qch21Nu2BheNS6wom89FWQyg23Hb_p3m8163Vp0I_qsQsll9-5tUWs6wxQbrpXAyjj-bs8_Gkvs2e8xNXax4Hf4Z3DY2in-h7EpOJjULnon1ueuoWPOr?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="EdificioSf">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dm2306files.storage.live.com/y4mc564jyDf-Wre-_kdLS9cajRueZYC9WzBB6ErGhfuH_tPDeusQfiYa1bTrI0yxERjlphKktidxWvnK66TymPj-n6ClbkhTmh-loluBm1BC74A0Q5LKNoi44C86MYVYSiSC920BcUKBM_cXgToU3odPGxSlwXsaOHZxn2xhWKhOUfXIx3Bn3-ys0Skb2C-GGUA?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="CasaCv">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dm2306files.storage.live.com/y4mR8Ba7InQXK8A95s5l1nf_forOpAZTmIV6PUVOxdgjYfUXauSEBNb42nExIvDB2qBmJTesQLNijwCqrzEbZfjSqOUOdMuZmNYnShDP8THAJQJ_IK2mNwRN5E1H0IMhftjkeEvew5NW9cmxIfsNBO6uhJqNrYeC3JK1lPOWo3bO5BiO8Yt5hkMeUjxFlrkaDMC?width=3840&height=2160&cropmode=none" class="d-block w-100 img-fluid" alt="CafayateA32">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <!--Logo de WhatsApp-->
         <a href="wa.me/+543814486426" class="logoWhatsapp">
@@ -122,5 +133,9 @@
         <h2 class="copyrightProyectos">Copyright&copy; 2022 designed by <strong>elcape23</strong></h2>
     </footer>
 </div>
+
+<!--Link JS Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
